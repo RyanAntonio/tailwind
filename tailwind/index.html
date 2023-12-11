@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind</title>
+</head>
+<body>
+    <div class="flex justify-end" style="background: linear-gradient(270deg, #103167 2.87%, #3777aa);">
+        <div class="flex flex-col sm:flex-row justify-end items-center text-white">
+            <ul class="list-none flex flex-wrap justify-end gap-3 mb-0">
+                <li class="me-4 mb-2">FAQ</li>
+                <li class="me-4 mb-2">Get in Touch</li>
+                <li class="me-4 mb-2">Sign up for Newsletter</li> 
+                <li class="mb-2">
+                    <img src="82738522-smart-label-new.png.rendition.100.100.png" width="120" height="20" alt="Logo" class="border-r-2 border-white pr-4">
+                </li>
+                <li class="ms-auto me-4 mb-2">
+                    <a href="/us/en/language-selector/us_es.html" class="text-white">Español</a>
+                </li>
+            </ul>
+        </div>
+    </div>     
+    <nav class="bg-light">
+        <div class="container mx-auto p-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="navbar-brand">
+                    <img src="1228921-new-vaseline-logo.png.rendition.150.150.png.png" class="w-1/2" alt="Logo">
+                </a>
+    
+                <button class="navbar-toggler" @click="isOpen = !isOpen">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="hidden md:flex md:items-center md:justify-between md:w-3/4">
+                    <ul class="flex items-center space-x-4 mb-1 mb-md-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link font-bold text-blue-950">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="biodata.html" class="nav-link font-bold text-blue-950">BIODATA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact_us.html" class="nav-link font-bold text-blue-950">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="freecontent.html" class="nav-link font-bold text-blue-950">FREE CONTENT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://unai.edu/" class="nav-link font-bold text-blue-950">UNAI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://fti.unai.edu/" class="nav-link font-bold text-blue-950">FTI UNAI</a>
+                        </li>
+                    </ul>
+    
+                    <form class="flex" role="search">
+                        <input class="form-control me-2 h-10 border border-gray-800" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>    
+<div class="relative z-4">
+    <div class="flex flex-col-reverse md:flex-row">
+        <div class="p-4 md:p-10 lg:p-20 text-white bg-blue-950">
+            <h1 class="font-bold text-3xl md:text-5xl lg:text-6xl mb-4 md:mb-8">CLINICALLY PROVEN TO
+                VISIBLY EVEN SKIN TONE IN 14 DAYS</h1>
+            <p class="mb-4 md:mb-8">New Vaseline® Radiant X Even Tone Body Lotion with 1% niacinamide, visibly reduces dark spots.
+                So, you can Level Up to even-toned skin.</p>
+            <button class="bg-white text-blue-950 font-bold p-3">EXPLORE THE RANGE</button>
+        </div>
+        <div class="picture-content">
+            <img src="gambar1.webp" alt="" class="w-full">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="flex items-center justify-center">
+        <div class="col-span-12 textcontent2">
+            <h2 class="text-uppercase">
+                <span class="gradiasi flex flex-col items-center">
+                    <span class="blue-text mt-5 text-center text-3xl">
+                        <span class="dark-blue-text font-bold text-4xl text-blue-950">BEAUTIFUL SKIN IS HEALTHY SKIN</span>
+                    </span>
+                </span>
+            </h2>
+            <p class="text-center px-3 my-4 mt-1 text-gray-600">
+                We want to give every body healthy skin. And when we say every body, we mean it. No matter your age,
+                gender, or ethnicity, we are here for you. Your journey to beautiful, healthy skin starts with
+                Vaseline®.
+            </p>
+            <p class="text-center text-sky-600 text-lg font-bold">
+                Find your favorite vaseline® Product >
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container grid md:grid-cols-2 lg:grid-cols-4 gap-4 py-5 mt-3 mb-5">
+    <div class="flex flex-col items-center text-center mb-4">
+        <img src="vaseline-content1.png" class="img-fluid w-60" alt="Product 1">
+        <div class="mb-5 text-blue-950">Vaseline® Healing Jelly <br>Original</div>
+        <div class="btn rounded-0 px-20 py-3 text-white text-sm bg-blue-500">BUY NOW</div>
+    </div>
+    <div class="flex flex-col items-center text-center mb-4">
+        <img src="vaseline2.png" class="img-fluid  w-60" alt="Product 2">
+        <div class="mb-5 text-blue-950">Vaseline® Radiant X Deep <br>Nourishment Hand Butter</div>
+        <div class="btn rounded-0 px-20 py-3 text-white text-sm bg-blue-500">BUY NOW</div>
+    </div>
+    <div class="flex flex-col items-center text-center mb-4">
+        <img src="vaseline3.png" class="img-fluid  w-60" alt="Product 3">
+        <div class="mb-5 text-blue-950">Vaseline® Intensive Care™ <br> Hydra Replenish Hand Crème</div>
+        <div class="btn rounded-0 px-20 py-3 text-white text-sm bg-blue-500">BUY NOW</div>
+    </div>
+    <div class="flex flex-col items-center text-center">
+        <img src="vaseline4.png" class="img-fluid  w-60" alt="Product 4">
+        <div class="mb-5 text-blue-950">Vaseline® Clinical Care™ <br>Hand Sanitizer Lotion</div>
+        <div class="btn rounded-0 px-20 py-3 text-white text-sm bg-blue-500">BUY NOW</div>
+    </div>
+</div>
+<div class="container mx-auto mx-auto px-4 max-w-screen-xl">
+    <div class="grid grid-cols-12 gap-4">
+        <h2 class="col-span-12 text-2xl uppercase text-center">
+            <span class="gradiasi flex flex-col items-center">
+                <span class="text-blue-500">
+                    <span class="dark-blue-text font-bold text-4xl text-blue-950">WHAT DOES YOUR SKIN NEED?</span>
+                </span>
+            </span>
+        </h2>
+        <p class="col-span-12 text-center md:col-start-4 md:col-span-6 mb-10 text-gray-600">
+            We want to keep all skin healthy. That’s why we offer superior products for moisturization and have
+            formulations for specific skin concerns and needs. We aim to rescue dry skin to its best healthy self.
+        </p>
+    </div>
+</div>
+<div class="container mx-auto md:flex justify-between py-5 mt-3 mb-px-200">
+    <div class="flex flex-col items-center justify-center text-center mb-4">
+        <img src="icon-1.png" class="w-32 h-28 object-cover" alt="Icon 1">
+        <div class="text-icon mt-2 font-bold text-blue-950">Everyday<br>Moisturization</div>
+    </div>
+
+    <div class="flex flex-col items-center justify-center text-center mb-4">
+        <img src="icon-2.png" class="w-32 h-28 object-cover" alt="Icon 2">
+        <div class="text-icon mt-2 font-bold text-gray-600">Advanced <br> Moisturization</div>
+    </div>
+
+    <div class="flex flex-col items-center justify-center text-center mb-4">
+        <img src="icon-3.png" class="w-32 h-28 object-cover" alt="Icon 3">
+        <div class="text-icon mt-2 font-bold text-gray-600">Radiance & <br> Glow</div>
+    </div>
+
+    <div class="flex flex-col items-center justify-center text-center">
+        <img src="icon-4.png" class="w-32 h-28 object-cover" alt="Icon 4">
+        <div class="text-icon mt-2 font-bold text-gray-600">Eczema <br> Relief</div>
+    </div>
+
+    <div class="flex flex-col items-center justify-center text-center">
+        <img src="icon-5.png" class="w-32 h-28 object-cover" alt="icon 5">
+        <div class="text-icon mt-2 font-bold text-gray-600">Refreshing <br> Moisturization</div>
+    </div>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-center text-center">
+    <img src="moistvaseline.webp" alt="" class="h-96 md:pl-20 md:pb-10">
+    <div class="flex-grow-1">
+        <h2 class="text-4xl text-blue-950 md:pl-20 md:pb-5 font-bold md:pt-5">MOISTURE TO HEAL DRY SKIN</h2>
+        <p class="text-gray-600 md:pl-20 md:mb-0 md:pb-20">
+            When your skin isn’t feeling its best, neither are you. That’s why <br> Vaseline® products were specially designed to
+            nurture and heal dry <br> skin, leaving the dryness behind.
+        </p>
+    </div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 h-650 pt-5 pb-5 bg-blue-950">
+    <img src="vas 1.webp" alt="" class="p-8">
+    <div class="p-8 flex flex-col justify-center">
+        <div class="text-uppercase font-bold text-white text-1xl mb-4">
+            The Vaseline® Healing Project
+        </div>
+        <div>
+            <h3 class="font-bold text-white text-4xl uppercase mb-4">Equitable Skincare for All</h3>
+            <p class="text-white mb-8">
+                We believe skin health is a right, not a privilege. That's
+                why we are on a mission toward making skin health more
+                accessible to everyone, everywhere.
+            </p>
+            <h3 class="bg-white text-blue-950 font-bold custom-box inline-flex items-center justify-center p-4 p-3 w-52 text-darkblue text-sm h-25">
+                DISCOVER MORE 
+            </h3>
+        </div>
+    </div>
+</div>
+<div class="flex flex-col md:flex-row items-center mx-4 my-5 md:ml-20">
+    <img src="gambar2.webp" alt="Vaseline" class="order-2 ml-0 md:ml-56 p-lg-5">
+    <div class="order-1 text-center md:text-left">
+        <h2 class="text-base pb-2 font-bold text-blue-500">
+            SUSTAINABILITY
+        </h2>
+        <h1 class="text-4xl font-bold text-blue-900">
+            TAKING STEPS <br> TOWARD LESS & <br> BETTER PLASTIC
+        </h1>
+        <p class="pt-2 pb-3 text-gray-600">
+            Our bottle is as important as what’s in it, and we <br> pledge to
+            continue the journey toward adopting <br> more sustainable
+            practices, especially when it <br> comes to plastic use.
+        </p>
+        <h3 class="font-bold text-white bg-blue-500 inline-flex text-center justify-center px-8 md:px-16 py-3 w-50 md:w-auto h-25 p-3 p-2 pt-3 text-sm">
+            LEARN MORE
+        </h3>
+    </div>
+</div>
+<div class="flex flex-col md:flex-row items-center mx-4 my-5">
+    <img src="gambar3.webp" alt="Vaseline" class="order-1 pt-2 md:pt-0 md:order-2 md:pl-16 md:pr-10" style="height: 650px;">
+    <div class="order-2 text-center md:text-left md:pl-24">
+        <h2 class="text-sm pb-2 font-bold text-blue-500">
+            SKIN CARE ROUTINE
+        </h2>
+        <h1 class="text-4xl font-bold text-blue-900">
+            SLUGGING: ALL <br> YOU NEED TO <br> KNOW
+        </h1>
+        <p class="pt-2 pb-3 text-gray-600">
+            Deepen the impact of your beauty routine and get <br> beautiful, healthy skin
+            with just one extra step. Find <br> out more about slugging with Vaseline® Original <br> Healing Jelly!
+        </p>
+        <h3 class="text-white text-sm font-bold inline-flex text-center justify-center py-3 px-6 md:px-14 pt-3 w-50 md:w-50 h-25 bg-blue-500">
+            FIND OUT MORE
+        </h3>
+    </div>
+</div>
+<div class="container flex p-2 p-0 pt-5">
+    <div class="flex-grow text-center">
+        <h2 class="gradiasi flex flex-col items-center">
+            <span class="blue-text">
+                <span class="text-2xl text-center font-bold text-blue-950 text-4xl">LOOKING FOR MORE HEALTHY TIPS?</span>
+            </span>
+        </h2>
+        <p class="text-center px-14 my-1 text-gray-600">
+            Healthy skin is essential to living your best life. Learn more about how to take care of your skin so you can look and feel your best.
+        </p>
+        <p class="text-center text-blue-700 text-lg font-bold pt-7">
+            Discover More >
+        </p>
+    </div>
+</div>
+<div class="flex justify-center p-5">
+    <div class="mx-2 w-[20%]">
+        <img src="org-1.webp">
+        <h3 class="text-lg font-bold text-blue-950">How to Take Care of a Tattoo</h3>
+        <p class="text-gray-600">Tattoos require a lot of skin care before & after. Vaseline® Healing Jelly can keep skin hydrated & lock in moisture to keep ink looking fresh!</p>
+        <h2 class="text-primary font-bold text-blue-700">Read More ></h2>
+    </div>
+    <div class="mx-2 w-[20%]">
+        <img src="org-2.webp">
+        <h3 class="text-lg font-bold text-blue-950">Dry Itchy Skin Relief</h3>
+        <p class="text-gray-600">Skin can dry out - here's how to relieve the itch.</p>
+        <h2 class="text-primary font-bold text-blue-700">Read More ></h2>
+    </div>
+    <div class="mx-5 w-[20%]">
+        <img src="org-3.webp">
+        <h3 class="text-lg font-bold text-blue-950">Dealing with Dry Facial Skin</h3>
+        <p class="text-gray-600">Here's how to spot & treat dry face skin so it doesn't keep you from your day.</p>
+        <h2 class="text-primary font-bold text-blue-700">Read More ></h2>
+    </div>
+    <div class="mx-2 w-[20%]">
+        <img src="org-4.webp">
+        <h3 class="text-lg font-bold text-blue-950">How to Heal Scars</h3>
+        <p class="text-gray-600">Scars are pretty permanent, but that doesn't mean their discomfort has to be.</p>
+        <h2 class="text-primary font-bold text-blue-700">Read More ></h2>
+    </div>
+</div>
+<div class="text-center pt-20">
+    <div class="gradiasi flex flex-col items-center">
+        <h2>
+            <span class="text-center">
+                <span class="dark-blue-text-3 text-3xl font-bold text-blue-950">REAL STORIES FROM REAL PEOPLE AND THEIR LOVE FOR VASELINE®</span>
+            </span>
+        </h2>
+    </div>
+</div>
+<div class="flex flex-wrap gap-4 mx-2 md:mx-0 md:ml-7 mb-10">
+    <img class="w-full md:w-72" src="ss1.png" alt="">
+    <img class="w-full md:w-72" src="ss2.png" alt="">
+    <img class="w-full md:w-72" src="ss3.png" alt="">
+    <img class="w-full md:w-72" src="ss4.png" alt="">
+</div>
+</body>
+<footer>
+    <div class="container bg-gradient-to-r from-blue-500 to-blue-950 mx-auto text-white text-center py-5">
+        <h2 class="text-2xl font-bold uppercase tracking-wide my-3 font-sans">
+            HOW ELSE CAN WE HELP YOU?
+        </h2>
+        <p class="text-lg">
+            <a href="#" class="text-decoration-none text-reset">
+                <span class="font-bold text-lg">FAQs ></span>
+            </a>
+            <a href="#" class="text-decoration-none text-reset">
+                <span class="font-bold text-lg">Get in touch ></span>
+            </a>
+        </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8">
+        <div>
+            <p class="font-bold text-gray-600">Explore</p>
+            <ul class="list-none text-gray-600">
+                <li>All Products</li>
+                <li>All Articles</li>
+                <li>Skin Health for All</li>
+            </ul>
+        </div>
+        <div>
+            <p class="font-bold text-gray-600">Help</p>
+            <ul class="list-none text-gray-600">
+                <li>Where to Buy</li>
+                <li>Get in Touch</li>
+                <li>Live Chat</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+        <div>
+            <p class="font-bold text-gray-600">Legal</p>
+            <ul class="list-none text-gray-600">
+                <li>Site Map</li>
+                <li>Accessibility</li>
+                <li>Terms of Use</li>
+                <li>Privacy Notice</li>
+                <li>Do Not Sell or Share My Personal Information</li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="text-gray-600 font-bold">Sign up for healthy skin. Stay updated, get exclusive Vaseline® offers, inspiration, and more.</h4>
+            <input type="email" placeholder="Email Addres" name="email" style="width: 250px; height: 50px; padding-left: 10px; margin-bottom: 30px;" class="border border-slate-500">
+            <h4 class="font-bold text-gray-500">
+                Keep in Touch
+            </h4>
+            <img src="icon.png" alt="" class="w-48">
+        </div>
+    </div>
+    
+    <div class="footer-paling-bawah pt-3 pb-3 bg-blue-500 border-t-2 border-blue-300 flex ">
+        <img src="Screenshot_2023-10-25_104958-removebg-preview.png" alt="" class="h-32">
+        <div class="text-white">
+            <p class="mt-5">&copy 2023 Unilever. All rights</p>
+            <p class="w-[50%]">
+                reserved. This website is directed only to U.S. consumers for products and services of Unilever United
+                States. This website is not directed to consumers outside of the U.S.
+            </p>
+        </div>
+        <div class="w-full md:w-[20%] md:ml-0 mt-5 md:mt-10">
+            <select id="bahasa" class="w-full md:w-auto text-xl md:text-base text-gray-600">
+                <option value="en">United States (EN) </option>
+                <option value="es">Brazil (PT)</option>
+                <option value="fr">Thailand (TH)</option>
+                <option value="de">Netherlands (NL)</option>
+                <option value="id">Indonesia (ID)</option>
+            </select>
+        </div>        
+    </div>    
+</div>
+</footer>
+</html>

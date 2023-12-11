@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+}
+
+
+.inner {
+    display: flex;
+    justify-content: flex-end;
+    background:linear-gradient(270deg,#103167 2.87%,#3777aa);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.inner ul li {
+    display: inline;
+    margin-right: 20px ;
+    color: white;
+    font-weight: 300;
+    padding-left: 30px;
+    gap: 10px;
+}
+.dua{
+    margin-left: -29px;
+}
+
+.language-link {
+    color: white;
+    margin-right: 60px;
+    margin-left: 20px;
+}
+
+.navbar {
+    font-size: 1.125rem;
+    line-height: normal;
+    text-decoration: none;
+    font-family: open-sans, Arial, sans-serif;
+    background-color: white;
+    font-weight: 600;
+    padding: 12px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+}
+
+.navbar li {
+    margin-right: 45px;
+    display: inline-flex;
+    color:#103167;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.search-icon {
+    position: relative;
+}
+
+.search-icon input {
+    font-size: 16px;
+    width: 180px;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.search-icon i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.biodata {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+    .biodata19 {
+        background-color: #103167;
+        color: #fff;
+        padding: 20px;
+    }
+
+    .biodata {
+        text-align: center;
+    }
+
+    .biodata h1 {
+        color: #3777aa;
+        font-size: 50px;
+    }
+
+    .biodata img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .biodata p {
+        margin: 5px 0;
+    }
+
+    .biodata strong {
+        font-weight: bold;
+    }
+
+h1 {
+    font-size: 24px;
+}
+
+img {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+#footer-teks1{
+    background: linear-gradient(270deg,#103167 2.87%,#3777aa);
+    text-align: center;
+    color: white;
+    height: 120px;
+    padding-top: 93px;
+    padding-bottom: 93px;
+    border-bottom: 7px solid linear-gradient(90deg,#d6c07c,#f7f2d4 52.6%,#d6c07c);;    
+}
+
+.gradiasi {
+    background: linear-gradient(90deg,#d6c07c,#f7f2d4 52.6%,#d6c07c);;
+}
+
+#footer-teks1 h2 {
+    font-size: 2.70rem;
+    line-height: 2.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-family: open-sans,Arial,sans-serif;
+    font-weight: 700;
+    margin-top: -25px;
+}
+
+.button-secondary-light .white-text {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-decoration: none;
+    font-family: open-sans,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .footer-grid div {
+    padding: 30px;
+  }
+  
+  
+  .footer-grid ul {
+    list-style: none;
+  
+  }
+  
+  .footer-grid li {
+    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .footer-grid p {
+    color: #666;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .footer-paling-bawah{
+    color: #fff;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #3777aa;
+    border-top: 1px solid #00adee;
+  }
+  .footer-paling-bawah img{
+    width: 120px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: -30px;
+
+    
+  }
+  .footer-paling-bawah p{
+    margin-right: 420px;
+    font-size: 15px;
+  }
+  .bahasa {
+    float: right;
+    margin-right: 70px;
+    margin-top: -65px;
+}
+
+.very-large-select {
+    font-size: 16px;
+    color: grey;
+    padding: 10px;
+    border: 2px solid #0074e4; /* Border pertama */
+    height: 60px; /* Meningkatkan tinggi elemen untuk memperpanjang opsi */
+    width: 260px;
+}

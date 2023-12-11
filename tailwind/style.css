@@ -1,0 +1,22 @@
+.gradiasi::after {
+    content: "";
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 5px;
+    display: block;
+    background: linear-gradient(88.15deg,#d6c07c .27%,#f7f2d4 47.51%,#d6c07c 93.77%);
+}
+
+.baru p {
+    display: block;
+    padding-left: 1px;
+    padding-bottom: 20px;
+}
+
+.picture-content img{
+    width: 1800px;
+    height: 600px;
+}
+
+

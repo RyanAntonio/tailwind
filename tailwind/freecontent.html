@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Free Content</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+            box-sizing: border-box;
+            font-family: Arial, Verdana, Tahoma, sans-serif;
+        }
+
+        .inner {
+            display: flex;
+            justify-content: flex-end;
+            background: linear-gradient(270deg, #103167 2.87%, #3777aa);
+            font-size: 1rem;
+            text-decoration: none;
+            white-space: nowrap;
+            padding: 6px;
+            letter-spacing: 1px;
+            font-style: normal;
+        }
+
+        .inner ul li {
+            display: inline;
+            margin-right: 20px;
+            color: white;
+            font-weight: 300;
+            padding-left: 30px;
+            gap: 10px;
+        }
+
+        .dua {
+            margin-left: -29px;
+        }
+
+        .language-link {
+            color: white;
+            margin-right: 60px;
+            margin-left: 20px;
+        }
+
+        .navbar {
+            font-size: 1.125rem;
+            line-height: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            font-weight: 600;
+            padding: 12px;
+        }
+
+        .navbar a {
+        text-decoration: none;
+        color: inherit; 
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar li {
+            margin-right: 45px;
+            display: inline-flex;
+            color: #103167;
+            vertical-align: middle;
+        }
+
+        .search-icon {
+            position: relative;
+        }
+
+        .search-icon input {
+            font-size: 16px;
+            width: 180px;
+            padding: 10px;
+            border: 1px solid rgba(128, 128, 128, 0.5);
+        }
+
+        .search-icon i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .content {
+    text-align: center;
+}
+
+.quote {
+    margin: 20px auto;
+    max-width: 600px; 
+}
+
+.quote p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 10px 0;
+}
+
+.quote p:first-child {
+    font-style: italic;
+}
+
+.quote p:last-child {
+    font-weight: bold;
+}
+
+
+        #footer-teks1{
+    background: linear-gradient(270deg,#103167 2.87%,#3777aa);
+    text-align: center;
+    color: white;
+    height: 120px;
+    padding-top: 93px;
+    padding-bottom: 93px;
+    border-bottom: 7px solid linear-gradient(90deg,#d6c07c,#f7f2d4 52.6%,#d6c07c);;    
+}
+
+.gradiasi {
+    background: linear-gradient(90deg,#d6c07c,#f7f2d4 52.6%,#d6c07c);;
+}
+
+#footer-teks1 h2 {
+    font-size: 2.70rem;
+    line-height: 2.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-family: open-sans,Arial,sans-serif;
+    font-weight: 700;
+    margin-top: -25px;
+}
+
+.button-secondary-light .white-text {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-decoration: none;
+    font-family: open-sans,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .footer-grid div {
+    padding: 30px;
+  }
+  
+  
+  .footer-grid ul {
+    list-style: none;
+  
+  }
+  
+  .footer-grid li {
+    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .footer-grid p {
+    color: #666;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .footer-paling-bawah{
+    color: #fff;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #3777aa;
+    border-top: 1px solid #00adee;
+  }
+  .footer-paling-bawah img{
+    width: 120px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: -30px;
+
+    
+  }
+  .footer-paling-bawah p{
+    margin-right: 420px;
+    font-size: 15px;
+  }
+  .bahasa {
+    float: right;
+    margin-right: 70px;
+    margin-top: -65px;
+}
+
+.very-large-select {
+    font-size: 16px;
+    color: grey;
+    padding: 10px;
+    border: 2px solid #0074e4; /* Border pertama */
+    height: 60px; /* Meningkatkan tinggi elemen untuk memperpanjang opsi */
+    width: 260px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="flex justify-end" style="background: linear-gradient(270deg, #103167 2.87%, #3777aa);">
+            <div class="flex flex-col sm:flex-row justify-end items-center text-white">
+                <ul class="list-none flex flex-wrap justify-end gap-3 mb-0">
+                    <li class="me-4 mb-2">FAQ</li>
+                    <li class="me-4 mb-2">Get in Touch</li>
+                    <li class="me-4 mb-2">Sign up for Newsletter</li> 
+                    <li class="mb-2">
+                        <img src="82738522-smart-label-new.png.rendition.100.100.png" width="120" height="20" alt="Logo" class="border-r-2 border-white pr-4">
+                    </li>
+                    <li class="ms-auto me-4 mb-2">
+                        <a href="/us/en/language-selector/us_es.html" class="text-white">Español</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="bg-light">
+            <div class="container mx-auto p-4">
+                <div class="flex items-center justify-between">
+                    <a href="#" class="navbar-brand">
+                        <img src="1228921-new-vaseline-logo.png.rendition.150.150.png.png" class="w-1/2" alt="Logo">
+                    </a>
+        
+                    <button class="navbar-toggler" @click="isOpen = !isOpen">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="hidden md:flex md:items-center md:justify-between md:w-3/4">
+                        <ul class="flex items-center space-x-4 mb-1 mb-md-0">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link font-bold text-blue-950">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="biodata.html" class="nav-link font-bold text-blue-950">BIODATA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact_us.html" class="nav-link font-bold text-blue-950">CONTACT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="freecontent.html" class="nav-link font-bold text-blue-950">FREE CONTENT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://unai.edu/" class="nav-link font-bold text-blue-950">UNAI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://fti.unai.edu/" class="nav-link font-bold text-blue-950">FTI UNAI</a>
+                            </li>
+                        </ul>
+        
+                        <form class="flex" role="search">
+                            <input class="form-control me-2 h-10 border border-gray-800" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="quote">
+            <p>"Jangan menunggu kesempurnaan. Lakukan apa yang Anda bisa, dengan apa yang Anda miliki, di mana pun Anda berada."</p>
+            <p>- Steve Maraboli</p>
+        </div>
+        <div class="quote">
+            <p>"Kesuksesan tidak akhir, kegagalan tidak fatal: keberanian untuk terus maju yang menghitung."</p>
+            <p>- Winston Churchill</p>
+        </div>
+        <div class="quote">
+            <p>"Kesuksesan adalah kunci. Kunci adalah kerja keras, ketekunan, belajar, belajar, dan lagi, belajar dari kegagalan Anda."</p>
+            <p>- Lionel Messi</p>
+        </div>
+    </div>
+    <footer>
+        <div class="container bg-gradient-to-r from-blue-500 to-blue-950 mx-auto text-white text-center py-5">
+            <h2 class="text-2xl font-bold uppercase tracking-wide my-3 font-sans">
+                HOW ELSE CAN WE HELP YOU?
+            </h2>
+            <p class="text-lg">
+                <a href="#" class="text-decoration-none text-reset">
+                    <span class="font-bold text-lg">FAQs ></span>
+                </a>
+                <a href="#" class="text-decoration-none text-reset">
+                    <span class="font-bold text-lg">Get in touch ></span>
+                </a>
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8">
+            <div>
+                <p class="font-bold text-gray-600">Explore</p>
+                <ul class="list-none text-gray-600">
+                    <li>All Products</li>
+                    <li>All Articles</li>
+                    <li>Skin Health for All</li>
+                </ul>
+            </div>
+            <div>
+                <p class="font-bold text-gray-600">Help</p>
+                <ul class="list-none text-gray-600">
+                    <li>Where to Buy</li>
+                    <li>Get in Touch</li>
+                    <li>Live Chat</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div>
+                <p class="font-bold text-gray-600">Legal</p>
+                <ul class="list-none text-gray-600">
+                    <li>Site Map</li>
+                    <li>Accessibility</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Notice</li>
+                    <li>Do Not Sell or Share My Personal Information</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-gray-600 font-bold">Sign up for healthy skin. Stay updated, get exclusive Vaseline® offers, inspiration, and more.</h4>
+                <input type="email" placeholder="Email Addres" name="email" style="width: 250px; height: 50px; padding-left: 10px; margin-bottom: 30px;" class="border border-slate-500">
+                <h4 class="font-bold text-gray-500">
+                    Keep in Touch
+                </h4>
+                <img src="icon.png" alt="" class="w-48">
+            </div>
+        </div>
+        
+        <div class="footer-paling-bawah pt-3 pb-3 bg-blue-500 border-t-2 border-blue-300 flex ">
+            <img src="Screenshot_2023-10-25_104958-removebg-preview.png" alt="" class="h-32">
+            <div class="text-white">
+                <p class="mt-5">&copy 2023 Unilever. All rights</p>
+                <p class="w-[50%]">
+                    reserved. This website is directed only to U.S. consumers for products and services of Unilever United
+                    States. This website is not directed to consumers outside of the U.S.
+                </p>
+            </div>
+            <div class="w-full md:w-[20%] md:ml-0 mt-5 md:mt-10">
+                <select id="bahasa" class="w-full md:w-auto text-xl md:text-base text-gray-600">
+                    <option value="en">United States (EN) </option>
+                    <option value="es">Brazil (PT)</option>
+                    <option value="fr">Thailand (TH)</option>
+                    <option value="de">Netherlands (NL)</option>
+                    <option value="id">Indonesia (ID)</option>
+                </select>
+            </div>        
+        </div>    
+    </div>
+    </footer>
+</body>
+</html>

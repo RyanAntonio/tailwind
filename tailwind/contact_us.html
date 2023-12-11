@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="iconweb.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .containercontact {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .radio-group {
+            display: flex;
+            margin-top: 5px;
+        }
+
+        .radio-group input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .checkbox-group {
+            margin-top: 5px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            let fullName = document.forms["myForm"]["fullName"].value;
+            let email = document.forms["myForm"]["email"].value;
+            let username = document.forms["myForm"]["username"].value;
+            let password = document.forms["myForm"]["password"].value;
+            let gender = document.querySelector('input[name="gender"]:checked');
+            let religion = document.getElementById("religion").value;
+            let address = document.getElementById("address").value;
+            let hobbies = document.querySelectorAll('input[name="hobby[]"]:checked');
+
+            if (fullName == "") {
+                alert("Full Name must be filled out");
+                return false;
+            }
+
+            if (email == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+
+            if (username == "") {
+                alert("Username must be filled out");
+                return false;
+            }
+
+            if (password == "") {
+                alert("Password must be filled out");
+                return false;
+            }
+
+            if (!gender) {
+                alert("Choose your gender");
+                return false;
+            }
+
+            if (religion == "") {
+                alert("Choose your religion");
+                return false;
+            }
+
+            if (address == "") {
+                alert("Address must be filled out");
+                return false;
+            }
+
+            if (hobbies.length === 0) {
+                alert("Choose at least one hobby");
+                return false;
+            }
+        }
+    </script>
+</head>
+<header>
+    <div class="flex justify-end" style="background: linear-gradient(270deg, #103167 2.87%, #3777aa);">
+        <div class="flex flex-col sm:flex-row justify-end items-center text-white">
+            <ul class="list-none flex flex-wrap justify-end gap-3 mb-0">
+                <li class="me-4 mb-2">FAQ</li>
+                <li class="me-4 mb-2">Get in Touch</li>
+                <li class="me-4 mb-2">Sign up for Newsletter</li> 
+                <li class="mb-2">
+                    <img src="82738522-smart-label-new.png.rendition.100.100.png" width="120" height="20" alt="Logo" class="border-r-2 border-white pr-4">
+                </li>
+                <li class="ms-auto me-4 mb-2">
+                    <a href="/us/en/language-selector/us_es.html" class="text-white">Español</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav class="bg-light">
+        <div class="container mx-auto p-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="navbar-brand">
+                    <img src="1228921-new-vaseline-logo.png.rendition.150.150.png.png" class="w-1/2" alt="Logo">
+                </a>
+    
+                <button class="navbar-toggler" @click="isOpen = !isOpen">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="hidden md:flex md:items-center md:justify-between md:w-3/4">
+                    <ul class="flex items-center space-x-4 mb-1 mb-md-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link font-bold text-blue-950">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="biodata.html" class="nav-link font-bold text-blue-950">BIODATA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact_us.html" class="nav-link font-bold text-blue-950">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="freecontent.html" class="nav-link font-bold text-blue-950">FREE CONTENT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://unai.edu/" class="nav-link font-bold text-blue-950">UNAI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://fti.unai.edu/" class="nav-link font-bold text-blue-950">FTI UNAI</a>
+                        </li>
+                    </ul>
+    
+                    <form class="flex" role="search">
+                        <input class="form-control me-2 h-10 border border-gray-800" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>    
+</header>
+<body>
+    <h1>Contact Us</h1>
+    <div class="containercontact">
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+
+            <label for="religion">Religion:</label>
+            <select id="religion" name="religion">
+                <option value="">Select</option>
+                <option value="Islam">Islam</option>
+                <option value="Christianity">Christianity</option>
+                <option value="Hinduism">Hinduism</option>
+                <option value="Buddhism">Buddhism</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address"></textarea>
+
+            <label>Hobbies:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="hobby-sports" name="hobby[]" value="Sports">
+                <label for="hobby-sports">Sports</label>
+                <input type="checkbox" id="hobby-music" name="hobby[]" value="Music">
+                <label for="hobby-music">Music</label>
+                <input type="checkbox" id="hobby-food" name="hobby[]" value="Food">
+                <label for="hobby-food">Food</label>
+            </div>
+
+            <button type="submit" name="submit" value="Save">Save</button>
+        </form>
+    </div>
+    <footer>
+        <div class="container bg-gradient-to-r from-blue-500 to-blue-950 mx-auto text-white text-center py-5">
+            <h2 class="text-2xl font-bold uppercase tracking-wide my-3 font-sans">
+                HOW ELSE CAN WE HELP YOU?
+            </h2>
+            <p class="text-lg">
+                <a href="#" class="text-decoration-none text-reset">
+                    <span class="font-bold text-lg">FAQs ></span>
+                </a>
+                <a href="#" class="text-decoration-none text-reset">
+                    <span class="font-bold text-lg">Get in touch ></span>
+                </a>
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8">
+            <div>
+                <p class="font-bold text-gray-600">Explore</p>
+                <ul class="list-none text-gray-600">
+                    <li>All Products</li>
+                    <li>All Articles</li>
+                    <li>Skin Health for All</li>
+                </ul>
+            </div>
+            <div>
+                <p class="font-bold text-gray-600">Help</p>
+                <ul class="list-none text-gray-600">
+                    <li>Where to Buy</li>
+                    <li>Get in Touch</li>
+                    <li>Live Chat</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div>
+                <p class="font-bold text-gray-600">Legal</p>
+                <ul class="list-none text-gray-600">
+                    <li>Site Map</li>
+                    <li>Accessibility</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Notice</li>
+                    <li>Do Not Sell or Share My Personal Information</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-gray-600 font-bold">Sign up for healthy skin. Stay updated, get exclusive Vaseline® offers, inspiration, and more.</h4>
+                <input type="email" placeholder="Email Addres" name="email" style="width: 250px; height: 50px; padding-left: 10px; margin-bottom: 30px;" class="border border-slate-500">
+                <h4 class="font-bold text-gray-500">
+                    Keep in Touch
+                </h4>
+                <img src="icon.png" alt="" class="w-48">
+            </div>
+        </div>
+        
+        <div class="footer-paling-bawah pt-3 pb-3 bg-blue-500 border-t-2 border-blue-300 flex ">
+            <img src="Screenshot_2023-10-25_104958-removebg-preview.png" alt="" class="h-32">
+            <div class="text-white">
+                <p class="mt-5">&copy 2023 Unilever. All rights</p>
+                <p class="w-[50%]">
+                    reserved. This website is directed only to U.S. consumers for products and services of Unilever United
+                    States. This website is not directed to consumers outside of the U.S.
+                </p>
+            </div>
+            <div class="w-full md:w-[20%] md:ml-0 mt-5 md:mt-10">
+                <select id="bahasa" class="w-full md:w-auto text-xl md:text-base text-gray-600">
+                    <option value="en">United States (EN) </option>
+                    <option value="es">Brazil (PT)</option>
+                    <option value="fr">Thailand (TH)</option>
+                    <option value="de">Netherlands (NL)</option>
+                    <option value="id">Indonesia (ID)</option>
+                </select>
+            </div>        
+        </div>    
+    </div>
+    </footer>
+</body>
+</html>
